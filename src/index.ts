@@ -11,9 +11,6 @@ const server = new SMTPServer({
   },
   onAuth(auth, session, callback) {
     console.log("onAuth");
-    if (auth.username === "user" && auth.password === "pass") {
-      return callback(null, { user: "user" });
-    }
     callback(null);
   },
   onMailFrom(address, session, callback) {
