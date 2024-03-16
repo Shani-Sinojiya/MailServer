@@ -28,6 +28,6 @@ const server = new SMTPServer({
   },
 });
 
-server.listen(25, undefined, () => {
+server.listen(25, "4.240.84.101", () => {
   console.log("SMTP server started on port 25");
 });
